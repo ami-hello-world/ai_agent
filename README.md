@@ -26,7 +26,9 @@
 - **LLM**: OpenAI API / Groq API
 - **ベクトル検索**: FAISS
 - **データベース**: SQLite
-- **音声**: sounddevice / soundfile
+- **TTS（音声合成）**: [VOICEVOX](https://voicevox.hiroshiba.jp/) — ローカルサーバー（`http://127.0.0.1:10101`）に対してREST APIで音声クエリ生成・合成を行い、スレッドで並列再生
+- **STT（音声認識）**: Google Cloud Speech-to-Text — マイク録音した音声をWAVファイルに書き出してAPIへ送信し、日本語テキストに変換
+- **音声I/O**: sounddevice / soundfile
 
 ## 開発状況
 
